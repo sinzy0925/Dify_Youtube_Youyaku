@@ -1,0 +1,870 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: You01
+  use_icon_as_answer_icon: false
+kind: app
+version: 0.1.2
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+    opening_statement: ''
+    retriever_resource:
+      enabled: false
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: template-transform
+      id: 1727831167387-source-1727832788937-target
+      source: '1727831167387'
+      sourceHandle: source
+      target: '1727832788937'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: if-else
+      id: 17278447315710-source-1727869879744-target
+      source: '17278447315710'
+      sourceHandle: source
+      target: '1727869879744'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: end
+      id: 1727869879744-false-1727869969394-target
+      source: '1727869879744'
+      sourceHandle: 'false'
+      target: '1727869969394'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: template-transform
+        targetType: end
+      id: 1727832788937-source-1727845479118-target
+      source: '1727832788937'
+      sourceHandle: source
+      target: '1727845479118'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: start
+        targetType: code
+      id: 1727789040660-source-1728866217500-target
+      source: '1727789040660'
+      sourceHandle: source
+      target: '1728866217500'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: code
+      id: 1728866217500-source-17278447315710-target
+      source: '1728866217500'
+      sourceHandle: source
+      target: '17278447315710'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: code
+      id: 1728866217500-source-17288829927560-target
+      source: '1728866217500'
+      sourceHandle: source
+      target: '17288829927560'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: if-else
+      id: 17288829927560-source-1727869879744-target
+      source: '17288829927560'
+      sourceHandle: source
+      target: '1727869879744'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: code
+      id: 1728866217500-source-17288837471030-target
+      source: '1728866217500'
+      sourceHandle: source
+      target: '17288837471030'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: if-else
+      id: 17288837471030-source-1727869879744-target
+      source: '17288837471030'
+      sourceHandle: source
+      target: '1727869879744'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: if-else
+      id: 1727869879744-true-17288838704010-target
+      source: '1727869879744'
+      sourceHandle: 'true'
+      target: '17288838704010'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: end
+      id: 17288838704010-false-1728883964910-target
+      source: '17288838704010'
+      sourceHandle: 'false'
+      target: '1728883964910'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: code
+      id: 17288838704010-d4616098-decd-4e9b-9c75-8c28540fef70-17288840150560-target
+      source: '17288838704010'
+      sourceHandle: d4616098-decd-4e9b-9c75-8c28540fef70
+      target: '17288840150560'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: llm
+      id: 17288840150560-source-1727831167387-target
+      source: '17288840150560'
+      sourceHandle: source
+      target: '1727831167387'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: code
+      id: 17288838704010-true-1728822972784-target
+      selected: false
+      source: '17288838704010'
+      sourceHandle: 'true'
+      target: '1728822972784'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: llm
+      id: 1728822972784-source-17288845379200-target
+      source: '1728822972784'
+      sourceHandle: source
+      target: '17288845379200'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: template-transform
+      id: 17288845379200-source-17288845791550-target
+      source: '17288845379200'
+      sourceHandle: source
+      target: '17288845791550'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: template-transform
+        targetType: end
+      id: 17288845791550-source-17288846152360-target
+      source: '17288845791550'
+      sourceHandle: source
+      target: '17288846152360'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 開始
+        type: start
+        variables:
+        - label: 検索ワード
+          max_length: 100
+          options: []
+          required: true
+          type: text-input
+          variable: question
+        - label: １桁（何件目）
+          max_length: 48
+          options: []
+          required: true
+          type: number
+          variable: startPoint
+      height: 115
+      id: '1727789040660'
+      position:
+        x: 332.28360047211106
+        y: -333.86588449495736
+      positionAbsolute:
+        x: 332.28360047211106
+        y: -333.86588449495736
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: gemini-1.5-flash
+          provider: google
+        prompt_template:
+        - id: a37d3a78-47ea-44b7-8103-792d03b79e36
+          role: system
+          text: '日本語で解答してください。
+
+            以下の[#内容]について可能な限り詳細に教えてください。
+
+            とくに以下の内容を詳細に
+
+            """ビジネス活用例
+
+            """
+
+            #内容
+
+            {{#17288840150560.result#}}'
+        selected: false
+        title: EN LLM要約
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: true
+      height: 97
+      id: '1727831167387'
+      position:
+        x: 636.9093695851689
+        y: -16.608201453053596
+      positionAbsolute:
+        x: 636.9093695851689
+        y: -16.608201453053596
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        selected: false
+        template: "##{{ point }}\r\nlang : {{ lang }}\r\nurl  : https://www.youtube.com/watch?v={{\
+          \ video0 }}\r\ntitle : {{ title0 }}\r\n要約 : {{ youyaku0 }}\r\n\r\n\r\n"
+        title: テンプレート
+        type: template-transform
+        variables:
+        - value_selector:
+          - '17288829927560'
+          - result
+          variable: title0
+        - value_selector:
+          - '17278447315710'
+          - result
+          variable: video0
+        - value_selector:
+          - '1727789040660'
+          - startPoint
+          variable: point
+        - value_selector:
+          - '1727831167387'
+          - text
+          variable: youyaku0
+        - value_selector:
+          - '17288837471030'
+          - result
+          variable: lang
+      height: 53
+      id: '1727832788937'
+      position:
+        x: 636.9093695851689
+        y: 98.79082735012787
+      positionAbsolute:
+        x: 636.9093695851689
+        y: 98.79082735012787
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        code: "import json\nimport traceback\ndef main(arg1):\n    result_list = '日本語字幕がありません！'\n\
+          \n    try:\n        # Convert the JSON string back to a Python list\n  \
+          \      video_info_list = json.loads(arg1)\n        # 確認\n        #print(video_info_list)\n\
+          \n        \n        result_list = video_info_list['videoId']\n        print(video_info_list['videoId'])\n\
+          \        print(video_info_list['language'])\n        print(video_info_list['title'])\n\
+          \        print(video_info_list['viewCount']['text'].split(' ')[0].replace(',',\
+          \ ''))\n        print(video_info_list['publishedTime'])\n\n        # Return\
+          \ the result list as a JSON string\n        return {\n            \"result\"\
+          : result_list\n        }\n    except TypeError as e:\n        # エラーが発生した場合の処理\n\
+          \        print(f\"An error occurred: {e}\")\n        traceback.print_exc()\
+          \  # 詳細なエラーメッセージと行番号を表示\n        return {\n            \"result\": result_list\n\
+          \        }"
+        code_language: python3
+        desc: ''
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: video0
+        type: code
+        variables:
+        - value_selector:
+          - '1728866217500'
+          - result
+          variable: arg1
+      height: 53
+      id: '17278447315710'
+      position:
+        x: 332.28360047211106
+        y: -103.18415196524552
+      positionAbsolute:
+        x: 332.28360047211106
+        y: -103.18415196524552
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1727832788937'
+          - output
+          variable: en
+        selected: false
+        title: 終了 2
+        type: end
+      height: 89
+      id: '1727845479118'
+      position:
+        x: 636.9093695851689
+        y: 169.7397427174841
+      positionAbsolute:
+        x: 636.9093695851689
+        y: 169.7397427174841
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: is not
+            id: 136aae65-2fb3-40e9-a49d-7edd533dc6bb
+            value: 日本語字幕がありません！
+            varType: string
+            variable_selector:
+            - '17278447315710'
+            - result
+          id: 'true'
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: IF/ELSE
+        type: if-else
+      height: 125
+      id: '1727869879744'
+      position:
+        x: 332.28360047211106
+        y: 143.80611761676346
+      positionAbsolute:
+        x: 332.28360047211106
+        y: 143.80611761676346
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '17278447315710'
+          - result
+          variable: non
+        selected: false
+        title: 終了 3
+        type: end
+      height: 89
+      id: '1727869969394'
+      position:
+        x: 636.9093695851689
+        y: 265.8061176167631
+      positionAbsolute:
+        x: 636.9093695851689
+        y: 265.8061176167631
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        code: "from youtube_transcript_api import YouTubeTranscriptApi\n\ndef main(videoId):\n\
+          \    video_id = videoId\n    transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)\n\
+          \n    transcript = transcript_list.find_transcript(['ja'])\n    transcript_data\
+          \ = transcript.fetch()\n    text1 = ''\n    for index, item in enumerate(transcript_data,\
+          \ start=1):\n        text = item['text'].replace('\\n', '')  # 改行を削除\n \
+          \       text1 += text\n\n\n    return {\n        \"result\": text1\n   \
+          \ }\n"
+        code_language: python3
+        desc: ''
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: JP Jimaku
+        type: code
+        variables:
+        - value_selector:
+          - '17278447315710'
+          - result
+          variable: videoId
+      height: 53
+      id: '1728822972784'
+      position:
+        x: 918.9093695851682
+        y: -154.86588449495736
+      positionAbsolute:
+        x: 918.9093695851682
+        y: -154.86588449495736
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        code: "from youtubesearchpython import VideosSearch\nfrom langdetect import\
+          \ detect   \nimport re\nimport json\n\ndef main(search_query,limit0):\n\n\
+          \    def get_many_videos(search_query, limit=100):\n        videos_search\
+          \ = VideosSearch(search_query, limit=limit)\n        results = []\n    \
+          \    \n        while len(results) < limit:\n            batch = videos_search.result()[\"\
+          result\"]\n            results.extend(batch)\n            \n           \
+          \ if not videos_search.next():\n                break\n        \n      \
+          \  return results[:limit]\n\n    def determine_language(text):\n       \
+          \ try:\n            lang = detect(text)\n            return lang if lang\
+          \ in ['ja', 'en'] else 'unknown'\n        except:\n            return \"\
+          unknown\"\n\n    # 検索したいキーワードを指定\n    #search_query = \"dify ai\"\n\n  \
+          \  # 検索を実行\n    #videos_search = VideosSearch(search_query, limit = 1000)\
+          \  # より多くの結果を取得\n    results = get_many_videos(search_query, limit=100)\n\
+          \n    # 結果を取得\n    #results = videos_search.result()[\"result\"]\n\n   \
+          \ # publishedTimeに年が含まれていないかチェックする関数\n    def is_recent_video(published_time):\n\
+          \        if published_time is None:\n            return False\n        return\
+          \ \"year\" not in published_time.lower() and \"years\" not in published_time.lower()\n\
+          \n    # タイトルに日本語が含まれているかチェックする関数\n    def contains_japanese(text):\n   \
+          \     pattern = r'[ぁ-んァ-ン\\s.,!?()[\\]{}:;\"\\'`@#$%^&*_+=|~<>-]'\n    \
+          \    return bool(re.search(pattern, text))\n    def contains_english(text):\n\
+          \        pattern = r'[a-zA-Z\\s.,!?()[\\]{}:;\"\\'`@#$%^&*_+=|~<>-]'\n \
+          \       return bool(re.search(pattern, text))\n    from langdetect import\
+          \ detect\n\n    def determine_language(text):\n        try:\n          \
+          \  lang = detect(text)\n            return lang if lang in ['ja', 'en']\
+          \ else 'unknown'\n        except:\n            return \"unknown\"\n\n  \
+          \  # フィルタリング\n    filtered_results = [\n        video for video in results\
+          \ \n        if 'publishedTime' in video and is_recent_video(video['publishedTime'])\n\
+          \    ]\n\n    # sorted_resultsの各要素に対してlanguageキーを追加\n    for video in filtered_results:\n\
+          \        try:\n            video['language'] = determine_language(video['title'])\n\
+          \        except Exception as e:\n            print(f\"言語の判定中にエラーが発生しました:\
+          \ {e}\")\n            video['language'] = 'Unknown'\n\n    # 言語が'unknown'でないエントリーのみをフィルタリング\n\
+          \    filtered_results = [result for result in filtered_results if result.get('language')\
+          \ != 'unknown']\n\n\n    # viewCountでソート\n    sorted_results = sorted(filtered_results,\
+          \ key=lambda x: int(x['viewCount']['text'].split()[0].replace(',', '')),\
+          \ reverse=True)\n    list_results = list(sorted_results)\n\n    array_results\
+          \ = []\n    for result in sorted_results:\n        array_results.append({'title':\
+          \ result['title'],'videoId': result['id'],'viewCount': result['viewCount'],'publishedTime':\
+          \ result['publishedTime'],'channel': result['channel'],'language': result['language']})\n\
+          \n    print(array_results[limit0])\n\n    return {\n        \"result\":\
+          \ json.dumps(array_results[limit0], ensure_ascii=False)\n    }\n"
+        code_language: python3
+        desc: ''
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: Search Youtube
+        type: code
+        variables:
+        - value_selector:
+          - '1727789040660'
+          - question
+          variable: search_query
+        - value_selector:
+          - '1727789040660'
+          - startPoint
+          variable: limit0
+      height: 53
+      id: '1728866217500'
+      position:
+        x: 332.28360047211106
+        y: -170.49193267117445
+      positionAbsolute:
+        x: 332.28360047211106
+        y: -170.49193267117445
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        code: "import json\nimport traceback\ndef main(arg1):\n    result_list = '日本語字幕がありません！'\n\
+          \n    try:\n        # Convert the JSON string back to a Python list\n  \
+          \      video_info_list = json.loads(arg1)\n        # 確認\n        #print(video_info_list)\n\
+          \n        \n        result_list = video_info_list['title']\n        print(video_info_list['videoId'])\n\
+          \        print(video_info_list['language'])\n        print(video_info_list['title'])\n\
+          \        print(video_info_list['viewCount']['text'].split(' ')[0].replace(',',\
+          \ ''))\n        print(video_info_list['publishedTime'])\n\n        # Return\
+          \ the result list as a JSON string\n        return {\n            \"result\"\
+          : result_list\n        }\n    except TypeError as e:\n        # エラーが発生した場合の処理\n\
+          \        print(f\"An error occurred: {e}\")\n        traceback.print_exc()\
+          \  # 詳細なエラーメッセージと行番号を表示\n        return {\n            \"result\": result_list\n\
+          \        }"
+        code_language: python3
+        desc: ''
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: title
+        type: code
+        variables:
+        - value_selector:
+          - '1728866217500'
+          - result
+          variable: arg1
+      height: 53
+      id: '17288829927560'
+      position:
+        x: 332.28360047211106
+        y: -34.37451363786653
+      positionAbsolute:
+        x: 332.28360047211106
+        y: -34.37451363786653
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        code: "import json\nimport traceback\ndef main(arg1):\n    result_list = '日本語字幕がありません！'\n\
+          \n    try:\n        # Convert the JSON string back to a Python list\n  \
+          \      video_info_list = json.loads(arg1)\n        # 確認\n        #print(video_info_list)\n\
+          \n        \n        result_list = video_info_list['language']\n        print(video_info_list['videoId'])\n\
+          \        print(video_info_list['language'])\n        print(video_info_list['title'])\n\
+          \        print(video_info_list['viewCount']['text'].split(' ')[0].replace(',',\
+          \ ''))\n        print(video_info_list['publishedTime'])\n\n        # Return\
+          \ the result list as a JSON string\n        return {\n            \"result\"\
+          : result_list\n        }\n    except TypeError as e:\n        # エラーが発生した場合の処理\n\
+          \        print(f\"An error occurred: {e}\")\n        traceback.print_exc()\
+          \  # 詳細なエラーメッセージと行番号を表示\n        return {\n            \"result\": result_list\n\
+          \        }"
+        code_language: python3
+        desc: ''
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: language
+        type: code
+        variables:
+        - value_selector:
+          - '1728866217500'
+          - result
+          variable: arg1
+      height: 53
+      id: '17288837471030'
+      position:
+        x: 332.28360047211106
+        y: 43.63411550504168
+      positionAbsolute:
+        x: 332.28360047211106
+        y: 43.63411550504168
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: 054d2c17-0ca9-43b1-a747-477c09e09006
+            value: ja
+            varType: string
+            variable_selector:
+            - '17288837471030'
+            - result
+          id: 'true'
+          logical_operator: and
+        - case_id: d4616098-decd-4e9b-9c75-8c28540fef70
+          conditions:
+          - comparison_operator: contains
+            id: d4eb7ded-c62d-45ee-ae30-5706badf737c
+            value: en
+            varType: string
+            variable_selector:
+            - '17288837471030'
+            - result
+          id: d4616098-decd-4e9b-9c75-8c28540fef70
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: IF/ELSE (1)
+        type: if-else
+      height: 173
+      id: '17288838704010'
+      position:
+        x: 636.9093695851689
+        y: -384.3658844949572
+      positionAbsolute:
+        x: 636.9093695851689
+        y: -384.3658844949572
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '17288837471030'
+          - result
+          variable: non
+        selected: false
+        title: 終了 4
+        type: end
+      height: 89
+      id: '1728883964910'
+      position:
+        x: 924.2427130910278
+        y: -315.8658844949574
+      positionAbsolute:
+        x: 924.2427130910278
+        y: -315.8658844949574
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        code: "from youtube_transcript_api import YouTubeTranscriptApi\n\ndef main(videoId):\n\
+          \    video_id = videoId\n    transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)\n\
+          \n    transcript = transcript_list.find_transcript(['en'])\n    transcript_data\
+          \ = transcript.fetch()\n    text1 = ''\n    for index, item in enumerate(transcript_data,\
+          \ start=1):\n        text = item['text'].replace('\\n', '')  # 改行を削除\n \
+          \       text1 += text\n\n\n    return {\n        \"result\": text1\n   \
+          \ }\n"
+        code_language: python3
+        desc: ''
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: EN Jimaku
+        type: code
+        variables:
+        - value_selector:
+          - '17278447315710'
+          - result
+          variable: videoId
+      height: 53
+      id: '17288840150560'
+      position:
+        x: 642.2427130910291
+        y: -154.86588449495736
+      positionAbsolute:
+        x: 642.2427130910291
+        y: -154.86588449495736
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: gemini-1.5-flash
+          provider: google
+        prompt_template:
+        - id: a37d3a78-47ea-44b7-8103-792d03b79e36
+          role: system
+          text: '以下の[#内容]について可能な限り詳細に教えてください。
+
+            とくに以下の内容を詳細に
+
+            """ビジネス活用例
+
+            """
+
+            #内容
+
+            {{#1728822972784.result#}}'
+        selected: false
+        title: JP LLM要約
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: true
+      height: 97
+      id: '17288845379200'
+      position:
+        x: 918.9093695851682
+        y: -16.608201453053596
+      positionAbsolute:
+        x: 918.9093695851682
+        y: -16.608201453053596
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        selected: false
+        template: "##{{ point }}\r\nlang : {{ lang }}\r\nurl  : https://www.youtube.com/watch?v={{\
+          \ video0 }}\r\ntitle : {{ title0 }}\r\n要約 : {{ youyaku0 }}\r\n\r\n\r\n"
+        title: テンプレート (1)
+        type: template-transform
+        variables:
+        - value_selector:
+          - '17288829927560'
+          - result
+          variable: title0
+        - value_selector:
+          - '17278447315710'
+          - result
+          variable: video0
+        - value_selector:
+          - '1727789040660'
+          - startPoint
+          variable: point
+        - value_selector:
+          - '17288845379200'
+          - text
+          variable: youyaku0
+        - value_selector:
+          - '17288837471030'
+          - result
+          variable: lang
+      height: 53
+      id: '17288845791550'
+      position:
+        x: 924.2427130910278
+        y: 98.79082735012787
+      positionAbsolute:
+        x: 924.2427130910278
+        y: 98.79082735012787
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '17288845791550'
+          - output
+          variable: ja
+        selected: false
+        title: 終了 2 (1)
+        type: end
+      height: 89
+      id: '17288846152360'
+      position:
+        x: 918.9093695851682
+        y: 179.23974271748415
+      positionAbsolute:
+        x: 918.9093695851682
+        y: 179.23974271748415
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: 211.54531520741443
+      y: 276.6301286412576
+      zoom: 0.5000000000000013
