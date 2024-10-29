@@ -246,7 +246,7 @@ workflow:
           required: true
           type: text-input
           variable: question
-        - label: １桁（何件目）
+        - label: 取得順位(１桁)
           max_length: 48
           options: []
           required: true
@@ -264,7 +264,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         context:
           enabled: false
@@ -311,7 +311,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         desc: ''
         selected: false
@@ -352,7 +352,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         code: "import json\nimport traceback\ndef main(arg1):\n    result_list = '日本語字幕がありません！'\n\
           \n    try:\n        # Convert the JSON string back to a Python list\n  \
@@ -392,7 +392,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         desc: ''
         outputs:
@@ -415,7 +415,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         cases:
         - case_id: 'true'
@@ -445,7 +445,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         desc: ''
         outputs:
@@ -468,7 +468,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         code: "from youtube_transcript_api import YouTubeTranscriptApi\n\ndef main(videoId):\n\
           \    video_id = videoId\n    transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)\n\
@@ -503,7 +503,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         code: "from youtubesearchpython import VideosSearch\nfrom langdetect import\
           \ detect   \nimport re\nimport json\n\ndef main(search_query,limit0):\n\n\
@@ -571,11 +571,11 @@ workflow:
       positionAbsolute:
         x: 332.28360047211106
         y: -170.49193267117445
-      selected: false
+      selected: true
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         code: "import json\nimport traceback\ndef main(arg1):\n    result_list = '日本語字幕がありません！'\n\
           \n    try:\n        # Convert the JSON string back to a Python list\n  \
@@ -615,7 +615,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         code: "import json\nimport traceback\ndef main(arg1):\n    result_list = '日本語字幕がありません！'\n\
           \n    try:\n        # Convert the JSON string back to a Python list\n  \
@@ -655,7 +655,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         cases:
         - case_id: 'true'
@@ -696,7 +696,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         desc: ''
         outputs:
@@ -715,11 +715,11 @@ workflow:
       positionAbsolute:
         x: 924.2427130910278
         y: -315.8658844949574
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         code: "from youtube_transcript_api import YouTubeTranscriptApi\n\ndef main(videoId):\n\
           \    video_id = videoId\n    transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)\n\
@@ -754,7 +754,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         context:
           enabled: false
@@ -799,7 +799,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         desc: ''
         selected: false
@@ -840,7 +840,7 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     - data:
         desc: ''
         outputs:
@@ -863,8 +863,8 @@ workflow:
       sourcePosition: right
       targetPosition: left
       type: custom
-      width: 244
+      width: 243
     viewport:
-      x: 211.54531520741443
-      y: 276.6301286412576
+      x: 265.10819976394384
+      y: 438.4959663355874
       zoom: 0.5000000000000013
